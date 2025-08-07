@@ -2,10 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::view('/second', 'second'); 
-Route::view('/home','home');
-
+Route::view('/', 'home')->name('home');
+Route::view('contact', 'contact')->name('contact');
+Route::view('about', 'about')->name('about');
 
